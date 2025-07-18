@@ -14,6 +14,17 @@ describe('HousingLocation', () => {
 
     fixture = TestBed.createComponent(HousingLocation);
     component = fixture.componentInstance;
+    (component as any).housingLocation.set({
+      id: 1,
+      name: 'Test Home',
+      city: 'Test City',
+      state: 'TS',
+      photo: '',
+      availableUnits: 2,
+      wifi: true,
+      laundry: false
+    });
+
     fixture.detectChanges();
   });
 
