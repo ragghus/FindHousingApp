@@ -9,7 +9,7 @@ import { Home } from './home/home';
         <img src="/assets/logo.svg" alt="logo" width="100" height="100"/>
       </header>
       <section class="content">
-        <app-home/>
+        <app-home> </app-home>
       </section>
     </main>
   `,
@@ -18,6 +18,6 @@ import { Home } from './home/home';
 })
 export class App {
   title(): string {
-  return 'Hello, housing-app';
+  return 'housing-app';
   }
 }
