@@ -17,5 +17,7 @@ import { Home } from './home/home';
   imports: [Home],
 })
 export class App {
-  protected readonly title = 'weather-app';
+  title(): string {
+  return 'Hello, housing-app';
+  }
 }
