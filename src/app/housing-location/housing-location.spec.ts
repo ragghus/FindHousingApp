@@ -1,29 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { HousingLocation } from './housing-location';
+import {TestHostComponent} from './housingLocation-host'
 
 describe('HousingLocation', () => {
-  let component: HousingLocation;
-  let fixture: ComponentFixture<HousingLocation>;
+  let component: TestHostComponent;
+  let fixture: ComponentFixture<TestHostComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [HousingLocation]
-    })
-    .compileComponents();
+      imports: [TestHostComponent]
+    }).compileComponents();
 
-    fixture = TestBed.createComponent(HousingLocation);
+    fixture = TestBed.createComponent(TestHostComponent);
     component = fixture.componentInstance;
-    (component as any).housingLocation.set({
-      id: 1,
-      name: 'Test Home',
-      city: 'Test City',
-      state: 'TS',
-      photo: '',
-      availableUnits: 2,
-      wifi: true,
-      laundry: false
-    });
 
     fixture.detectChanges();
   });
