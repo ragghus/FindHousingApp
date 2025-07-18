@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "weather-app": {
+    "housing-app": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -18,11 +18,9 @@
               "zone.js"
             ],
             "tsConfig": "tsconfig.app.json",
-            "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+            "assets": [              
+                "src/favicon.ico",
+                "src/assets"              
             ],
             "styles": [
               "src/styles.css"
@@ -56,10 +54,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "weather-app:build:production"
+              "buildTarget": "housing-app:build:production"
             },
             "development": {
-              "buildTarget": "weather-app:build:development"
+              "buildTarget": "housing-app:build:development"
             }
           },
           "defaultConfiguration": "development"

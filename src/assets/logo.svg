@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+	<rect x="0" y="0" width="48" height="48" fill="none" stroke="transparent" stroke-width="4"/>
+  <!-- Home Icon (centered) -->
+  <path fill="cornflowerblue" d="M60 25L30 50h8v25h16V60h12v15h16V50h8L60 25z"/>
+  
+  
+  <!-- 'Homes' Text (centered below icon) -->
+  <text x="60" y="100" text-anchor="middle" fill="cornflowerblue" font-family="Arial, sans-serif" font-size="18">
+    Homes
+  </text>
+</svg>
