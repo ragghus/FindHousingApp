@@ -1,20 +1,23 @@
-import { Component, signal } from '@angular/core';
-import { Home } from './home/home';
+import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
+
 
 @Component({
   selector: 'app-root',
   template: `
    <main>
+    <a [routerLink]="['/']">
       <header class="brand-name" style="display: flex; align-items: center; gap: 8px;">
         <img src="/assets/logo.svg" alt="logo" width="100" height="100"/>
       </header>
+      </a>
       <section class="content">
-        <app-home> </app-home>
+        <router-outlet></router-outlet>
       </section>
     </main>
   `,
   styleUrl: './app.css',
-  imports: [Home],
+  imports: [RouterModule],
 })
 export class App {
   title(): string {
