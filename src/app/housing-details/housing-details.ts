@@ -35,13 +35,13 @@ import { HousingService } from '../housing.service';
 export class HousingDetails {
 
   // to check page navigates with correct id
-  route: ActivatedRoute = inject(ActivatedRoute);
+  // route: ActivatedRoute = inject(ActivatedRoute);
   housingService = inject(HousingService);
   housingLocation : HousingLocationInfo | undefined;
-
-  constructor() {
-        const housingLocationId = Number(this.route.snapshot.params['id']);
+  
+  constructor(route: ActivatedRoute = inject(ActivatedRoute)) {
+        const housingLocationId = Number(route.snapshot.params['id']);
         this.housingLocation = this.housingService.getHouseLocationById(housingLocationId);
-        console.log('HousingDetails loaded with ID:', housingLocationId);
+        console.log('HousingDetails loaded with ID:'+ housingLocationId);
   }
 }

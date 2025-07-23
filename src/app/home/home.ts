@@ -5,6 +5,7 @@ import { HousingService } from '../housing.service';
 
 
 @Component({
+  standalone:true,
   selector: 'app-home',
   imports: [HousingLocation],
   template:`
