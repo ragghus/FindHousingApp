@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { ActivatedRoute } from '@angular/router';
 import { HousingDetails } from './housing-details';
 
 describe('HousingDetails', () => {
@@ -8,7 +8,20 @@ describe('HousingDetails', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [HousingDetails]
+      imports: [HousingDetails],
+
+      providers: [
+      {
+        provide: ActivatedRoute,
+        useValue: {
+          snapshot: {
+            paramMap: {
+              get: (key: string) => '999', // mock route param
+            },
+          },
+        },
+      },
+    ],
     })
     .compileComponents();
 
