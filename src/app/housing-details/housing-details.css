@@ -41,7 +41,7 @@
   margin: 0px;
 }
 .listing-features > .section-heading {
-  color: rgb(103, 103, 243);
+  color: black;
   font-size: 13pt;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-left: 10px;
@@ -59,21 +59,33 @@
 li {
   list-style-type: none;
 }
+
 .listing-apply .section-heading {
   font-size: 13pt;
-  margin-bottom: 0px;
+  margin-bottom: none;
 }
+
+.apply-form-heading {
+  margin-top: 70px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  font-style: italic;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+}
+
 label, input {
   display: block;
+  margin-left: 10px;
 }
 label {
-  color: blueviolet;
+  color: rgb(140, 140, 222);
   font-weight: bold;
   text-transform: uppercase;
   font-size: 12pt;
 }
 input {
-  font-size: 16pt;
+  font-size: 13pt;
   margin-bottom: 15px;
   padding: 10px;
   width: 400px;
@@ -81,6 +93,14 @@ input {
   border-right: none;
   border-left: none;
   border-bottom: solid .3px;
+}
+
+.primary {
+  margin-left: 10px;
+  background-color: black;
+  color: antiquewhite;
+  font-size: medium;
+  
 }
 @media (max-width: 1024px) {
   .listing-photo {
